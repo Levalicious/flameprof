@@ -141,7 +141,6 @@ def prepare(funcs, calls, threshold=0.0001):
     bblocks = []
     block_counts = Counter()
 
-    visited = set()
     todo = [('root', set(), 0)]
     while todo:
         parent, visited, level = todo.pop(-1)
